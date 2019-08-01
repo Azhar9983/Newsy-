@@ -1,0 +1,79 @@
+body{
+    background-image:url("images/bgnews.jpg")
+}
+.first{
+    height:70px;
+    background-color:#efefef;
+    border:1px solid black;
+    font-size:50px;
+    font-style:italic;
+
+}
+.img{
+    margin-left: 45%;
+    margin-bottom:15px;
+}
+
+.bdr{
+    height:2000px;
+    width:100%;
+    border:2px solid black;
+}
+.newsBox{
+    border:0px solid blueviolet;
+    height:300px;
+    margin-left:60px;
+    margin-top:20px;
+    box-shadow:0px 5px 10px white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.scrollable{
+    height: 100%;
+    overflow: auto;
+}
+h5{
+    font-family: Verdana;
+    font-style: oblique;
+    font-weight: bold;
+    color:yellow;
+    text-shadow:0px 2px 5px black;
+}
+h4{
+    font-style:italic;
+    color:red;
+}
+ul{
+    list-style:none;
+    padding: 0px;
+
+
+
+}
+li{
+    padding:0px;
+}
+footer{
+    height:100px;
+    width:100%;
+    border:2px ridge black;
+    margin:10px;
+    border:none;
+    margin:40px;
+}
+.names{
+    color:aqua;
+    font-family: Verdana;
+    font-style: oblique;
+    font-weight: bold;
+    text-shadow:0px 5px 10px black;
+}
+hr{
+    border:1px solid black;
+    padding-top:0px;
+}
+#logo1{
+    height:30px;
+    width:30px;
+    border-radius:15px;
+}

@@ -1,0 +1,92 @@
+{% extends 'Home/base.html' %}
+
+{% block body %}
+{% load custom_filter %}
+    {% load staticfiles %}
+<div class="container ">
+<div class="row ">
+        <div class="col-sm-5 newsBox">
+        <div>
+            <h4><img id="logo1" src="{% static 'Home/images/toi.png' %}">Times Of India <i class="fas fa-angle-double-right"></i></h4><hr/>
+        </div>
+        <div class="scrollable">
+            <ul class="fa-ul">
+                {% for key,value in tmi %}
+                <li><span class="fa-li"><i class="fas fa-share"></i></span>&nbsp <a href="{{ value }}" target="_blank" title="{{ key }}">{{ key }}</a> </li>
+                    {% endfor %}
+            </ul>
+        </div>
+        </div>
+        <div class="col-sm-5 newsBox">
+                <div>
+            <h4><img id="logo1" src="{% static 'Home/images/hindu.png' %}">The Hindu <i class="fas fa-angle-double-right"></i></h4><hr/>
+        </div>
+        <div class="scrollable">
+            <ul class="fa-ul">
+                      {% for key,value in hindu %}
+                <li><span class="fa-li"><i class="fas fa-share"></i></span>&nbsp <a href="{{ value }}" target="_blank">{{ key }}</a> </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        </div></div>
+<div class="row">
+        <div class="col-sm-5 newsBox">
+                <div>
+            <h4><img id="logo1" src="{% static 'Home/images/htc.png' %}">Hindustan Times <i class="fas fa-angle-double-right"></i></h4><hr/>
+        </div>
+        <div class="scrollable">
+            <ul class="fa-ul">
+                     {% for key,value in ht %}
+                <li><span class="fa-li"><i class="fas fa-share"></i></span>&nbsp <a href="{{ value }}" target="_blank">{{ key }}</a> </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        </div>
+        <div class="col-sm-5 newsBox">
+                <div>
+            <h4><img id="logo1" src="{% static 'Home/images/ndtv.png' %}">NDTV <i class="fas fa-angle-double-right"></i></h4><hr/>
+        </div>
+        <div class="scrollable">
+            <ul class="fa-ul">
+                     {% for key,value in ndtv %}
+                <li><span class="fa-li"><i class="fas fa-share"></i></span>&nbsp <a href="{{ value }}" target="_blank">{{ key }}</a> </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        </div></div>
+        <div class="row">
+        <div class="col-sm-5 newsBox">
+                <div>
+            <h4><img id="logo1" src="{% static 'Home/images/min.png' %}">News 18 <i class="fas fa-angle-double-right"></i></h4><hr/>
+        </div>
+        <div class="scrollable">
+            <ul class="fa-ul">
+                     {% for key,value in news18 %}
+                <li><span class="fa-li"><i class="fas fa-share"></i></span>&nbsp <a href="{{ value }}" target="_blank">{{ key }}</a> </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        </div>
+        <div class="col-sm-5 newsBox">
+                <div>
+            <h4><img id="logo1" src="{% static 'Home/images/exp.png' %}">The Indian Express <i class="fas fa-angle-double-right"></i></h4><hr/>
+        </div>
+        <div class="scrollable">
+            <ul class="fa-ul">
+                     {% for key,value in indexp %}
+                <li><span class="fa-li"><i class="fas fa-share"></i></span>&nbsp <a href="{{ value }}" target="_blank">{{ key }}</a> </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        </div></div>
+    </div>
+    <footer>
+	    <h5>Developed by:</h5>
+	  <div class="names"> Hitesh chaurasia |
+	    Abhishek kumar sharma |
+	    Azharuddin ansari |
+	    Shivam dashore |
+	    Ajay roshan |<hr/></div>
+    </footer>
+
+{% endblock %}
